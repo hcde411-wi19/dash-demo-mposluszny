@@ -29,7 +29,7 @@ app.layout = html.Div(children=[
                 # but with the mode to be only "markers"
                 go.Scatter(
                     x=df['HP'],
-                    y=df['Weight'],
+                    y=df['Retail Price'],
                     mode='markers',
                     text=df['Vehicle Name'],  # This line sets the vehicle name as the points' labels.
                     marker={
@@ -43,7 +43,7 @@ app.layout = html.Div(children=[
                 # It is always a good practice to have axis labels.
                 # This is especially important in this case as the numbers are not trivial
                 'xaxis': {'title': 'Horse Power'},
-                'yaxis': {'title': 'Weight'},
+                'yaxis': {'title': 'Retail Price'},
             }
         }
     )

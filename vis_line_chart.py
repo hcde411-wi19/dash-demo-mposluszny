@@ -24,6 +24,7 @@ dg.index = dg.index.strftime('%Y-%m')
 dg.index.name = 'Month'
 
 fields = [title for title in list(dg) if title != "Date"]
+print(dg)
 
 # define lines - for each usage data, we create a line series through go.Scatter with mode 'lines+markers'
 series = []
